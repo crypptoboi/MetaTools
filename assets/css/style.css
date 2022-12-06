@@ -577,7 +577,7 @@ small.text {
   opacity: 0.8;
   content: "\f078";
   font-weight: 900;
-  font-family: "Font Awesome 5 pro";
+  font-family: sans-serif;
   border: 0;
   font-size: 80%; }
 
@@ -7662,7 +7662,7 @@ header.style-15 {
         .team.style-10 .team-card .img .social-icons .icon::after {
           content: "\f067";
           font-weight: 900;
-          font-family: "Font Awesome 5 pro"; }
+          font-family: sans-serif; }
       .team.style-10 .team-card .img .social-icons a {
         background-color: #fff;
         width: 50px;
@@ -10955,7 +10955,7 @@ footer.style-13 {
       footer.style-13 .content h2::before {
         position: absolute;
         content: "\f086";
-        font-family: "Font Awesome 5 pro";
+        font-family: sans-serif;
         left: -50px;
         top: -50px;
         font-size: 100px;
@@ -12430,7 +12430,7 @@ footer.style-15 {
     cursor: pointer; }
     .product-page .product-details .rate-stars input:after {
       content: "\f005";
-      font-family: "Font Awesome 5 pro";
+      font-family: sans-serif;
       font-weight: 900;
       font-size: 20px;
       color: #eee;
@@ -12720,7 +12720,7 @@ footer.style-15 {
     color: #000;
     content: "\f067";
     font-weight: 900;
-    font-family: "Font Awesome 5 pro";
+    font-family: sans-serif;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
