@@ -1430,10 +1430,10 @@ small.text {
     width: 150%;
     height: 100%;
     z-index: 1;
-    background: -webkit-gradient(linear, left top, right top, color-stop(10%, #0c3df4), color-stop(45%, #02b5ff), color-stop(#02b5ff), to(#0c3df4));
-    background: -webkit-linear-gradient(left, #0c3df4 10%, #02b5ff 45%, #02b5ff, #0c3df4);
-    background: -o-linear-gradient(left, #0c3df4 10%, #02b5ff 45%, #02b5ff, #0c3df4);
-    background: linear-gradient(to right, #0c3df4 10%, #02b5ff 45%, #02b5ff, #0c3df4);
+    background: -webkit-gradient(linear, left top, right top, color-stop(10%, #1f1f20), color-stop(45%, #909091), color-stop(#1f1f20), to(#909091));
+    background: -webkit-linear-gradient(left, #1f1f20 10%, #909091 45%, #909091, #1f1f20);
+    background: -o-linear-gradient(left, #1f1f20 10%, #909091 45%, #909091, #1f1f20);
+    background: linear-gradient(to right, #1f1f20 10%, #909091 45%, #909091, #1f1f20);
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease; }
@@ -1645,10 +1645,11 @@ small.text {
   .section-head.style-4 h2 span {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: -webkit-gradient(linear, left top, right top, from(#1e509c), color-stop(30%, #6999f1), color-stop(30%, #69bff1), color-stop(73%, #4cadee), to(#ff847f));
-    background-image: -webkit-linear-gradient(left, #1e469c 0%, #6999f1 30%, #69a8f1 30%, #4cc0ee 73%, #7ff0ff 100%);
-    background-image: -o-linear-gradient(left,  #1e469c 0%, #6999f1 30%, #69a8f1 30%, #4cc0ee 73%, #7ff0ff 100%);
-    background-image: linear-gradient(to right,  #1e469c 0%, #6999f1 30%, #69a8f1 30%, #4cc0ee 73%, #7ff0ff 100%); }
+    background-image: -webkit-gradient(linear, left top, right top, from(#1f1f20), color-stop(30%, #474849), color-stop(30%, #7a7a7a), color-stop(73%, #a9a9aa), to(#2c2221));
+    background-image: -webkit-linear-gradient(left, #1f1f20 0%, #4e4e4e 30%, #757577 30%, #909091 73%, #b8b8b8 100%);
+    background-image: -o-linear-gradient(left,  #1f1f20 0%, #4e4e4e 30%, #757577 30%, #909091 73%, #b8b8b8 100%);
+    background-image: linear-gradient(to right,  #1f1f20 0%, #4e4e4e 30%, #757577 30%, #909091 73%, #b8b8b8 100%); }
+
 
 .section-head.style-4 h5 {
   font-size: 16px;
@@ -2787,10 +2788,10 @@ header.style-2 {
   position: relative;
   min-height: 100vh;
   padding: 185px 0 100px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(-40%, #062063), color-stop(40%, #157aa6));
-  background: -webkit-linear-gradient(bottom, #062063 -40%, #157aa6 40%);
-  background: -o-linear-gradient(bottom, #062063 -40%, #157aa6 40%);
-  background: linear-gradient(to top, #062063 -40%, #157aa6 40%); }
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-40%, #333333), color-stop(40%, #7c7c7c));
+  background: -webkit-linear-gradient(bottom, #333333 -40%, #7c7c7c 40%);
+  background: -o-linear-gradient(bottom, #333333 -40%, #7c7c7c 40%);
+  background: linear-gradient(to top, #333333 -40%, #7c7c7c 40%); }
   header.style-2 .head_shape2 {
     position: absolute;
     bottom: -5%;
@@ -3274,10 +3275,10 @@ header.style-7 {
     header.style-7 .info h1 .text-grad {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      background-image: -webkit-gradient(linear, left top, right top, from(#501e9c), color-stop(30%, #8169f1), color-stop(30%, #8169f1), color-stop(73%, #a44cee), to(#ff847f));
-      background-image: -webkit-linear-gradient(left, #501e9c 0%, #8169f1 30%, #8169f1 30%, #a44cee 73%, #ff847f 100%);
-      background-image: -o-linear-gradient(left, #501e9c 0%, #8169f1 30%, #8169f1 30%, #a44cee 73%, #ff847f 100%);
-      background-image: linear-gradient(to right, #501e9c 0%, #8169f1 30%, #8169f1 30%, #a44cee 73%, #ff847f 100%); }
+      background-image: -webkit-gradient(linear, left top, right top, from(#383838), color-stop(30%, #6e6e6e), color-stop(30%, #7c7c7c), color-stop(73%, #afafaf), to(#4e3f3e));
+      background-image: -webkit-linear-gradient(left, #3d3d3d 0%, #737274 30%, #8b8b8b 30%, #b8b8b8 73%, #2b2222 100%);
+      background-image: -o-linear-gradient(left, #292929 0%, #555555 30%, #818083 30%, #808080 73%, #362929 100%);
+      background-image: linear-gradient(to right, #303030 0%, #737274 30%, #7c7c7c 30%, #999999 73%, #3d2b2b 100%); }
   header.style-7 .img {
     position: relative; }
     header.style-7 .img .rock7 {
@@ -8579,10 +8580,10 @@ header.style-15 {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 
-        background-image: -webkit-gradient(linear, left top, right top, from(#0c3df4), color-stop(30%, #02b5ff), color-stop(30%, #02b5ff), color-stop(73%, #0c3df4), to(#0c3df4));
-        background-image: -webkit-linear-gradient(left, #0c3df4 0%, #02b5ff 30%, #02b5ff 30%, #0c3df4 73%, #0c3df4 100%);
-        background-image: -o-linear-gradient(left, #0c3df4 0%, #02b5ff 30%, #02b5ff 30%, #0c3df4 73%, #0c3df4 100%);
-        background-image: linear-gradient(to right, #0c3df4 0%, #02b5ff 30%, #02b5ff 30%, #0c3df4 73%, #0c3df4 100%); }
+        background-image: -webkit-gradient(linear, left top, right top, from(#1f1f20), color-stop(30%, #909091), color-stop(30%, #909091), color-stop(73%, #909091), to(#909091));
+        background-image: -webkit-linear-gradient(left, #1f1f20 0%, #909091 30%, #909091 30%, #1f1f20 73%, #1f1f20 100%);
+        background-image: -o-linear-gradient(left, #1f1f20 0%, #909091 30%, #909091 30%, #1f1f20 73%, #1f1f20 100%);
+        background-image: linear-gradient(to right, #1f1f20 0%, #909091 30%, #909091 30%, #1f1f20 73%, #1f1f20 100%); }
     .community.style-4 .content .commun-card .inf h5 {
       font-size: 23px;
       color: #000;
@@ -8592,6 +8593,7 @@ header.style-15 {
     .community.style-4 .content .commun-card .inf p {
       font-size: 12px;
       color: #666; }
+
 
 /* --------------- community style-5 --------------- */
 .community.style-5 .content {
