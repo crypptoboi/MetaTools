@@ -157,7 +157,7 @@ TABLE OF CONTENTS:-
   color: var(--color-blue4) !important; }
 
 .bg-blue4 {
-  background-color: var(--color-blue4) !important; }
+  background-color: #313131 !important; }
 
 .border-blue4 {
   border-color: var(--color-blue4) !important; }
@@ -2976,10 +2976,10 @@ header.style-4 {
       header.style-4 .content .info h1 span {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        background-image: -webkit-gradient(linear, left top, right top, from(#1e409c), color-stop(30%, #6999f1), color-stop(30%, #69aff1), color-stop(73%, #4cadee), to(#7fffff));
-        background-image: -webkit-linear-gradient(left, #1e469c 0%, #69a4f1 30%, #69b4f1 30%, #4cc8ee 73%, #7fecff 100%);
-        background-image: -o-linear-gradient(left, #1e469c 0%, #69a4f1 30%, #69b4f1 30%, #4cc8ee 73%, #7fecff 100%);
-        background-image: linear-gradient(to right, #1e469c 0%, #69a4f1 30%, #69b4f1 30%, #4cc8ee 73%, #7fecff 100%); }
+        background-image: -webkit-gradient(linear, left top, right top, from(#383838), color-stop(30%, #4d4d4d), color-stop(30%, #8a8a8a), color-stop(73%, #838383), to(#223131));
+        background-image: -webkit-linear-gradient(left, #222222 0%, #414141 30%, #414141 30%, #636363 73%, #252d2e 100%);
+        background-image: -o-linear-gradient(left, #222222 0%, #414141 30%, #414141 30%, #636363 73%, #252d2e 100%);
+        background-image: linear-gradient(to right, #222222 0%, #414141 30%, #414141 30%, #636363 73%, #252d2e 100%); }
     header.style-4 .content .info .text {
       color: #666;
       font-size: 15px; }
@@ -3797,10 +3797,10 @@ header.style-15 {
             line-height: 60px;
             text-align: center;
             border-radius: 50%;
-            background-color: #4b224d;
+            background-color: #222222;
             font-size: 18px; }
           header.style-15 .countdown-content .countdown-card .countdown .item small {
-            color: #9e849f;
+            color: #5a5a5a;
             margin-top: 10px;
             text-transform: capitalize; }
       header.style-15 .countdown-content .countdown-card .progs-content .progress {
@@ -3952,7 +3952,7 @@ header.style-15 {
       text-align: center;
       width: 230px;
       height: 230px;
-      background-color: #4a00e1;
+      background-color: #3f3f3f;
       color: #fff;
       border-radius: 50%;
       overflow: hidden;
@@ -6869,8 +6869,8 @@ header.style-15 {
         color: #000; }
 
 .pricing.style-4 .form-check-input.bg-blue4 {
-  background-color: var(--color-blue4);
-  border-color: var(--color-blue4); }
+  background-color: var(--color-gray);
+  border-color: var(--color-gray); }
 
 .pricing.style-4 .content .row .col-lg-6:nth-of-type(1) .price-card {
   border-top-right-radius: 0;
