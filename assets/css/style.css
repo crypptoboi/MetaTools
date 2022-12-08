@@ -6162,17 +6162,20 @@ header.style-15 {
     .testimonials.style-4 .content .numbs .num-card .icon {
       height: 55px;
       display: inline-block;
-      margin-bottom: 15px; }
+      margin-bottom: 15px; 
+      justify-content: center;}
     .testimonials.style-4 .content .numbs .num-card h2 {
       color: var(--color-blue4); }
     .testimonials.style-4 .content .numbs .num-card p {
       font-size: 11px;
       color: #666;
-      margin-top: 5px; }
+      margin-top: 5px; 
+      justify-content: center;}
     .testimonials.style-4 .content .numbs .num-card:not(:last-of-type) {
       padding-right: 50px;
       margin-right: 50px;
-      border-right: 1px solid #9993; }
+      border-right: 1px solid #9993; 
+      justify-content: center;}
   .testimonials.style-4 .content .play-btn {
     display: -webkit-box;
     display: -ms-flexbox;
