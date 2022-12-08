@@ -6182,7 +6182,8 @@ header.style-15 {
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center; 
+  justify-content: center;}
     .testimonials.style-4 .content .play-btn .icon {
       width: 42px;
       height: 42px;
