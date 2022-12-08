@@ -6157,7 +6157,8 @@ header.style-15 {
   .testimonials.style-4 .content .numbs {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex; 
+    justify-content: center;}
     .testimonials.style-4 .content .numbs .num-card .icon {
       height: 55px;
       display: inline-block;
