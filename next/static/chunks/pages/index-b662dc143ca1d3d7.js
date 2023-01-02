@@ -81,7 +81,7 @@
                                                 children: [(0, n.jsx)("span", {
                                                     className: "icon",
                                                     children: (0, n.jsx)("img", {
-                                                        src: "svg/nft.png",
+                                                        src: "svg/nft.svg",
                                                         alt:"",
                                                         className: "fn__svg"
                                                     })
@@ -173,7 +173,7 @@
                                                 children: [(0, n.jsx)("span", {
                                                     className: "icon",
                                                     children: (0, n.jsx)("img", {
-                                                        src: "svg/nft.png",
+                                                        src: "svg/nft.svg",
                                                         alt:"",
                                                         className: "fn__svg"
                                                     })
