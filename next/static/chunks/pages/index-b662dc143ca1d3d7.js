@@ -70,7 +70,28 @@
                                                 className: "text",
                                                 children: "Launch Dapp"
                                             })]
-                                        }), (0, n.jsxs)("a", {
+                                        }),
+                                        (0, n.jsxs)("div",{
+                                            className: "buttons",
+                                            children: [(0, n.jsxs)("a", {
+                                                href: "https://app.coinmerge.io/project/metatoolserc",
+                                                target:"_blank",
+                                                rel: "noreferrer",
+                                                className: "neoh_fn_button",
+                                                children: [(0, n.jsx)("span", {
+                                                    className: "icon",
+                                                    children: (0, n.jsx)("img", {
+                                                        src: "svg/nft.svg",
+                                                        alt:"",
+                                                        className: "fn__svg"
+                                                    })
+                                                }), (0, n.jsx)("span", {
+                                                    className: "text",
+                                                    children: "NFT's"
+                                                })]
+                                            })]
+                                        }),
+                                        (0, n.jsxs)("a", {
                                             href: "https://t.me/MetaToolsERC",
                                             target: "_blank",
                                             rel: "noreferrer",
@@ -140,6 +161,26 @@
                                             }), (0, n.jsx)("span", {
                                                 className: "text",
                                                 children: "Launch Dapp"
+                                            })]
+                                        }),
+                                        (0, n.jsxs)("div",{
+                                            className: "buttons",
+                                            children: [(0, n.jsxs)("a", {
+                                                href: "https://app.coinmerge.io/project/metatoolserc",
+                                                target:"_blank",
+                                                rel: "noreferrer",
+                                                className: "neoh_fn_button",
+                                                children: [(0, n.jsx)("span", {
+                                                    className: "icon",
+                                                    children: (0, n.jsx)("img", {
+                                                        src: "svg/nft.svg",
+                                                        alt:"",
+                                                        className: "fn__svg"
+                                                    })
+                                                }), (0, n.jsx)("span", {
+                                                    className: "text",
+                                                    children: "NFT's"
+                                                })]
                                             })]
                                         }), (0, n.jsxs)("a", {
                                             href: "https://twitter.com/MetaToolsERC",
