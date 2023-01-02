@@ -88,7 +88,6 @@
                                                 }), (0, n.jsx)("span", {
                                                     className: "text",
                                                     children: "NFT's"
-                                                })]
                                             })]
                                         }),
                                         (0, n.jsxs)("a", {
@@ -109,6 +108,7 @@
                                             })]
                                         })]
                                     })]
+                                })]
                                 })]
                             }), (0, n.jsxs)("div", {
                                 className: "neoh_fn_about_item reverse",
