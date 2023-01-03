@@ -237,6 +237,12 @@ a.full_link {
   -ms-align-items: center;
   align-items: center;
 }
+
+.neoh_fn_header .header_in img{
+  width: 100px;
+  height: 100px;
+}
+
 .trigger_in {
   cursor: pointer;
   font-family: var(--hff);
