@@ -758,7 +758,8 @@
                                         },
                                         children: "Click To Copy"
                                     })]
-                                }), (0, n.jsxs)("ul", {
+                                }),
+                                (0, n.jsxs)("ul", {
                                     className: "tokenTaxWrapper",
                                     children: [(0, n.jsxs)("li", {
                                         className: "tokenTax",
