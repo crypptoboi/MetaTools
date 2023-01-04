@@ -216,7 +216,7 @@
                                         }), (0, t.jsx)("li", {
                                             className: "menu-item",
                                             children: (0, t.jsx)(f(), {
-                                                href: "ROADMAP.pdf",
+                                                href: "v2roadmap.pdf",
                                                 children: (0, t.jsx)("a", {
                                                     onClick: function () {
                                                         return s(!1)
@@ -227,7 +227,7 @@
                                         }), (0, t.jsx)("li", {
                                             className: "menu-item",
                                             children: (0, t.jsx)("a", {
-                                                href: "whitepaper.pdf",
+                                                href: "v2whitepaper.pdf",
                                                 onClick: function () {
                                                     return s(!1)
                                                 },
