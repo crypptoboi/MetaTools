@@ -74,7 +74,7 @@
                                         (0, n.jsxs)("div",{
                                             className: "buttons",
                                             children: [(0, n.jsxs)("a", {
-                                                href: "https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/60250227158935048233600050456809990689538482415126860744176549804712598175754",
+                                                href: "https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/60250227158935048233600050456809990689538482415126860744176549805812109803530",
                                                 target:"_blank",
                                                 rel: "noreferrer",
                                                 className: "neoh_fn_button",
@@ -166,7 +166,7 @@
                                         (0, n.jsxs)("div",{
                                             className: "buttons",
                                             children: [(0, n.jsxs)("a", {
-                                                href: "https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/60250227158935048233600050456809990689538482415126860744176549804712598175754",
+                                                href: "https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/60250227158935048233600050456809990689538482415126860744176549805812109803530",
                                                 target:"_blank",
                                                 rel: "noreferrer",
                                                 className: "neoh_fn_button",
