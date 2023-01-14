@@ -997,7 +997,7 @@
                                             children: "Meta Tools"
                                         }), (0, n.jsx)("p", {
                                             className: "fn_desc fn_animated_text",
-                                            children: "The metrics provided by MetaTools will allow holders to make a decision by doing their research from the first trigger of deployment in the VIP roomwhether the token being displayed is worthy of investing in, allowing them to decipher which opportunities will be most profitable."
+                                            children: "The metrics provided by MetaTools will allow holders to make a decision by doing their research from the first trigger of deployment in the VIP room whether the token being displayed is worthy of investing in, allowing them to decipher which opportunities will be most profitable."
                                         })]
                                     })
                                 }), (0, n.jsxs)("a", {
