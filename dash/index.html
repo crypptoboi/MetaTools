@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Genkin Ryu Dashboard</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+	<!-- Navigation Bar -->
+	<nav class="navbar bg-body-tertiary">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Genkin Ryu Reward Dashboard</a>
+			<span class="btn " style="background-color: var(--bs-info-border-subtle); color: var(--bs-light);" id="wallet-info" onclick=""></span>
+			<div>
+				<button class="btn" style="background-color: var(--bs-primary-border-subtle); color: var(--bs-light);" id="connect">Connect</button>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Swap Form -->
+	<div class="container" style="padding:20px;">
+		<hr>
+		<div class="input-group mb-3">
+			<span class="input-group-text">Unpaid Earnings</span>
+			<span class="input-group-text">$</span>
+			<input type="text" style="text-align:right;" class="form-control"placeholder="Unpaid Earnings" aria-label="Unpaid Earnings" id="unpaidEarn">
+			<span class="input-group-text">USDC</span>
+		</div>
+		<div class="input-group mb-3">
+			<span class="input-group-text">Paid Earnings</span>
+			<span class="input-group-text">$</span>
+			<input type="text" style="text-align:right;" class="form-control"placeholder="Paid Earnings" aria-label="Paid Earnings" id="paidEarning">
+			<span class="input-group-text">USDC</span>
+		</div>
+		<hr>
+		<div class="input-group mb-3">
+			<span class="input-group-text">Total Distributed</span>
+			<span class="input-group-text">$</span>
+			<input type="text" style="text-align:right;" class="form-control"placeholder="Total Distributed" aria-label="Total Distributed" id="totalDistribute">
+			<span class="input-group-text">USDC</span>
+		</div>
+		<div class="input-group mb-3">
+			<span class="input-group-text">Total Dividends</span>
+			<span class="input-group-text">$</span>
+			<input type="text" style="text-align:right;" class="form-control"placeholder="Total Dividends" aria-label="Total Dividends" id="totalDividends">
+			<span class="input-group-text">USDC</span>
+		</div>
+		<div class="input-group mb-3">
+			<span class="input-group-text">Current Total Dividends</span>
+			<span class="input-group-text">$</span>
+			<input type="text" style="text-align:right;" class="form-control"placeholder="Current Total Dividends" aria-label="Current Total Dividends" id="curtotalDividends">
+			<span class="input-group-text">USDC</span>
+		</div>
+	</div>
+	
+	
+	<div class="container">
+		<hr>
+		<h5>Reward Transaction Detail</h5>
+		<hr>
+		<table class="table table-dark table-hover" id="rewardTx">
+			<thead>
+				<tr>
+					<th scope="col">Block Number</th>
+					<th scope="col">Value</th>
+					<th scope="col">Transaction URL</th>
+				</tr>
+			</thead>
+			<tbody>					
+			</tbody>
+		</table>
+	</div>
+	
+
+	<script src="./js/jquery-3.6.3.min.js" type="application/javascript"></script>
+    <script src="./js/bootstrap.bundle.min.js" type="application/javascript"></script>
+	<script src="./js/ethers.js" type="application/javascript"></script>
+
+	<script>
+		let provider;
+		let selectedAddress;
+		let signer;
+		let genkinContract;
+		let hashPrinted = [];
+
+		const abi = [
+			"function getUnpaidEarnings(address shareholder) public view returns (uint256)",
+			"function totalDistributed() public view returns (uint256)",
+			"function totalDividends() public view returns (uint256)",
+			"function totalRewardsDistributed(address _wallet) external view returns (uint256)"
+		];
+
+		//Init
+		$( document ).ready(function() {
+			if(localStorage.getItem("returnUser") == "true")
+			{
+				$("#connect").click();
+
+				//Setup Dashboard
+
+			}
+		});
+
+		function trimaddress(address) {
+			return address.substring(0, 5) + "..." + address.substr(address.length - 4);
+		}
+
+		//Wallet Information
+		$("#wallet-info").click(async function() {
+			let balance = await provider.getBalance(selectedAddress[0].toString());
+			$("#wallet-info").html("Balance: "+parseFloat(ethers.utils.formatUnits(balance, "ether")).toFixed(4) + " Eth");
+		});
+
+		//Metamask Connection
+		$("#connect").click(async function() {
+			if (typeof window.ethereum == 'undefined') {
+				alert('Please install metamask extension!');
+				return;
+			} else {
+				if($("#connect").html() == "Connect")
+				{
+					provider = ((window.ethereum != null) ? new ethers.providers.Web3Provider(window.ethereum) : ethers.providers.getDefaultProvider());
+					selectedAddress = await provider.send("eth_requestAccounts", []);
+					signer = provider.getSigner(selectedAddress[0]);
+					let balance = await provider.getBalance(selectedAddress[0].toString());
+					$("#connect").html("Disconnect : "+trimaddress(selectedAddress[0].toString()));
+					$("#wallet-info").html("Balance : "+parseFloat(ethers.utils.formatUnits(balance, "ether")).toFixed(4) + " Eth");
+					localStorage.setItem("returnUser", true);
+					genkinContract = new ethers.Contract("0x17adfcB28BF217D0acca3197b2Ed4339DF36FeB5", abi, signer)
+					await LoadData();
+				}
+				/*
+				else{
+					await window.ethereum.request({
+						method: "wallet_requestPermissions",
+						params: [
+						{
+							eth_accounts: {}
+						}
+						]
+					});
+				}
+				*/
+			}
+		});
+
+		//Dashboard Data
+		async function LoadData()
+		{
+			console.log("Reload");
+			$("#unpaidEarn").val(( await genkinContract.getUnpaidEarnings(selectedAddress[0].toString()) / 1000000).toFixed(2));
+			$("#paidEarning").val(( await genkinContract.totalRewardsDistributed(selectedAddress[0].toString()) / 1000000).toFixed(2));
+			$("#totalDistribute").val( parseFloat(await genkinContract.totalDistributed() / 1000000).toFixed(2));
+			$("#totalDividends").val( parseFloat(await genkinContract.totalDividends() / 1000000).toFixed(2));
+			$("#curtotalDividends").val((((await genkinContract.totalDividends()) - (await genkinContract.totalDistributed())) / 1000000).toFixed(2));
+			$.ajax({
+				url: 'https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&address='+selectedAddress[0].toString()+'&page=1&offset=100&startblock=0&endblock=27025780&sort=desc&apikey=',
+				success: function (data) {
+					data.result.forEach(function(e,i){
+						console.log(e.from == 0x17adfcb28bf217d0acca3197b2ed4339df36feb5);
+						if(e.from == 0x17adfcb28bf217d0acca3197b2ed4339df36feb5 && hashPrinted.indexOf(e.hash) < 0)
+						{
+							hashPrinted.push(e.hash);
+							$("#rewardTx tbody").append("<tr><th scope='row'>"+e.blockNumber+"</th><td>$"+(e.value / 1000000).toFixed(2)+" USDC</td><td><a href='https://etherscan.io/tx/"+e.hash+"'>Transaction</a></td></tr>");
+						}
+					});
+				},
+				error: function (err) {
+					reject(err) // Reject the promise and go to catch()
+				}
+			});
+
+			setTimeout(LoadData, 6000 );
+		}
+
+		window.ethereum.on('accountsChanged', function(accounts) {
+			$("#connect").click();
+		});
+
+	</script>
+  </body>
+</html>
